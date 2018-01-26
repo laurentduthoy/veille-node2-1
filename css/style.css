@@ -19,6 +19,7 @@ nav ul li {
   color: white;
   text-decoration: none;
   list-style: none;
+  margin-right: 3em;
 }
 nav ul li:hover {
   color: red;
