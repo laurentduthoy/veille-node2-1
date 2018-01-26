@@ -34,6 +34,7 @@ body{
 	/*display: flex;*/
 	font-size: 1em;
 	font-family: "Roboto";
+
 }
 
 //style du header
@@ -68,16 +69,16 @@ header{
 			&:hover{
 				cursor: pointer;
 			}
-			&:hover + .sousMenu{
+			&:active + .sousMenu{
 				display:block;
-				//background-color: red;
 			}
 		}
 
 		.sousMenu{
-			//display: none;
-			position: relative;
-			top:0;
+			display: none;
+			position: absolute;
+			top:100px;
+			left: 1120px;
 			height: 8vh;
 			width: 12vw;
 			background-color: lighten(@couleurHeader, 30%);
@@ -96,6 +97,9 @@ header{
 					&:hover{
 						cursor: pointer;
 						background-color: lighten(@couleurHeader, 40%);
+					}
+					&:hover + .sousMenu{
+						display:block;
 					}
 				}
 			}
@@ -133,7 +137,7 @@ nav{
 
 .main{
 	display: flex;
-	justify-content:center;
+	flex-direction:column;
 
 	h2{
 		font-size: 2em;
@@ -141,46 +145,52 @@ nav{
 		color: lighten(black, 20%);
 		text-transform: uppercase;
 	}
+	
+	.lesItems{
 
-	.item{
-		display: flex;
-		justify-content:space-around;
-		align-items:center;
-		height: 4vh;
-		width: 40vw;
-		background-color: darken(@couleurFond, 10%);
-		border-radius: 25px;
-		box-shadow: @box-shadow;
-		margin-top: 5em;
+		margin: 0 auto;
+
+		.item{
+			display: flex;
+			justify-content:space-around;
+			align-items:center;
+			height: 4vh;
+			width: 40vw;
+			background-color: darken(@couleurFond, 10%);
+			border-radius: 25px;
+			box-shadow: @box-shadow;
+			margin-top: 5em;
 
 
 
-		&:hover{
-			background-color: lighten(@couleurHeader, 55%);
-		}
-		
-		h3{
-			font-weight: 700;
-			color: lighten(black, 30%)
-		}
-
-		h4{
-			font-style: italic;
-			color: lighten(black, 40%)
-		}
-
-		i{
-			color: lighten(black, 40%);
-			font-size: 1.5em;
-			transition:font-size 0.5s;
-			position: relative;
 			&:hover{
-				font-size: 1.7em;
-				cursor: pointer;
+				background-color: lighten(@couleurHeader, 55%);
+			}
+			
+			h3{
+				font-weight: 700;
+				color: lighten(black, 30%)
+			}
+
+			h4{
+				font-style: italic;
+				color: lighten(black, 40%)
+			}
+
+			i{
+				color: lighten(black, 40%);
+				font-size: 1.5em;
+				transition:font-size 0.5s;
+				position: relative;
+				&:hover{
+					font-size: 1.7em;
+					cursor: pointer;
+				}
 			}
 		}
 	}
 
+	
 }//fin main
 
 footer{

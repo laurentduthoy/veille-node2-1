@@ -54,12 +54,14 @@ header .utilisateur i {
 header .utilisateur i:hover {
   cursor: pointer;
 }
-header .utilisateur i:hover + .sousMenu {
+header .utilisateur i:active + .sousMenu {
   display: block;
 }
 header .utilisateur .sousMenu {
-  position: relative;
-  top: 0;
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 1120px;
   height: 8vh;
   width: 12vw;
   background-color: #8f8f8f;
@@ -78,6 +80,9 @@ header .utilisateur .sousMenu ul li:first-child {
 header .utilisateur .sousMenu ul li:hover {
   cursor: pointer;
   background-color: #a8a8a8;
+}
+header .utilisateur .sousMenu ul li:hover + .sousMenu {
+  display: block;
 }
 nav {
   height: 5vh;
@@ -103,7 +108,7 @@ nav ul li:hover {
 }
 .main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 .main h2 {
   font-size: 2em;
@@ -111,7 +116,10 @@ nav ul li:hover {
   color: #333333;
   text-transform: uppercase;
 }
-.main .item {
+.main .lesItems {
+  margin: 0 auto;
+}
+.main .lesItems .item {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -122,24 +130,24 @@ nav ul li:hover {
   box-shadow: 0px 6px 41px -5px rgba(0, 0, 0, 0.58);
   margin-top: 5em;
 }
-.main .item:hover {
+.main .lesItems .item:hover {
   background-color: #cecece;
 }
-.main .item h3 {
+.main .lesItems .item h3 {
   font-weight: 700;
   color: #4d4d4d;
 }
-.main .item h4 {
+.main .lesItems .item h4 {
   font-style: italic;
   color: #666666;
 }
-.main .item i {
+.main .lesItems .item i {
   color: #666666;
   font-size: 1.5em;
   transition: font-size 0.5s;
   position: relative;
 }
-.main .item i:hover {
+.main .lesItems .item i:hover {
   font-size: 1.7em;
   cursor: pointer;
 }
