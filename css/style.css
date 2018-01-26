@@ -59,3 +59,17 @@ nav ul li:hover {
   cursor: pointer;
   background-color: blue;
 }
+footer {
+  height: 5vh;
+  width: 100vw;
+  background-color: #292929;
+  position: fixed;
+  bottom: 0;
+}
+footer h6 {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 3em;
+  padding-top: 1em;
+  color: white;
+}
