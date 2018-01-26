@@ -12,6 +12,15 @@ body {
   /*display: flex;*/
   font-size: 1em;
 }
-nav {
+nav ul {
   display: flex;
+}
+nav ul li {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+nav ul li:hover {
+  color: red;
+  cursor: pointer;
 }
