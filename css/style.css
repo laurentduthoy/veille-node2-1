@@ -40,11 +40,8 @@ header .utilisateur {
 header .utilisateur h3 {
   padding-right: 1em;
 }
-header .utilisateur .icon {
-  height: 3em;
-  width: 3em;
-  border-radius: 100%;
-  background-color: white;
+header .utilisateur i {
+  font-size: 3em;
 }
 nav {
   height: 5vh;
