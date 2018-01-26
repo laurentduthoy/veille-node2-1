@@ -1,7 +1,7 @@
 /*Déclaration des constantes*/
 @keyframes animScale {
   from {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   to {
     font-size: 2em;
@@ -84,10 +84,11 @@ nav ul li:hover {
   box-shadow: 0px 6px 41px -5px rgba(0, 0, 0, 0.58);
 }
 .main .item:hover {
-  background-color: #c2c2c2;
+  background-color: #cecece;
 }
 .main .item h3 {
   font-weight: 700;
+  color: #4d4d4d;
 }
 .main .item h4 {
   font-style: italic;
@@ -95,10 +96,12 @@ nav ul li:hover {
 }
 .main .item i {
   color: #666666;
+  font-size: 1.5em;
+  cursor: auto;
 }
-.main .item i:hover {
+transition:all 5s .main .item i:hover {
   cursor: pointer;
-  animation: animScale, 1s;
+  font-size: 2em;
 }
 footer {
   height: 5vh;

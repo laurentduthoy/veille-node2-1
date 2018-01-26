@@ -10,7 +10,7 @@
 //Animation
 @keyframes animScale{
 	from{
-		font-size:1em;
+		font-size:1.5em;
 	}
 	to{
 		font-size:2em;
@@ -110,11 +110,12 @@ nav{
 		box-shadow: @box-shadow;
 
 		&:hover{
-			background-color: lighten(@couleurHeader, 50%);
+			background-color: lighten(@couleurHeader, 55%);
 		}
 		
 		h3{
 			font-weight: 700;
+			color: lighten(black, 30%)
 		}
 
 		h4{
@@ -124,9 +125,12 @@ nav{
 
 		i{
 			color: lighten(black, 40%);
+			font-size: 1.5em;
+			cursor:auto;
+			transition:all 5s
 			&:hover{
 				cursor: pointer;
-				animation:animScale, 1s;
+				font-size: 2em;
 			}
 		}
 	}
