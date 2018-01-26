@@ -7,6 +7,17 @@
 @box-shadow:0px 6px 41px -5px rgba(0,0,0,0.58);
 
 
+//Animation
+@keyframes animScale{
+	from{
+		font-size:1em;
+	}
+	to{
+		font-size:2em;
+	}
+}
+
+
 /*Style de la page*/
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -97,6 +108,10 @@ nav{
 		background-color: darken(@couleurFond, 10%);
 		border-radius: 25px;
 		box-shadow: @box-shadow;
+
+		&:hover{
+			background-color: lighten(@couleurHeader, 50%);
+		}
 		
 		h3{
 			font-weight: 700;
@@ -108,7 +123,11 @@ nav{
 		}
 
 		i{
-			color: lighten(black, 40%)
+			color: lighten(black, 40%);
+			&:hover{
+				cursor: pointer;
+				animation:animScale, 1s;
+			}
 		}
 	}
 

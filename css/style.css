@@ -1,4 +1,12 @@
 /*Déclaration des constantes*/
+@keyframes animScale {
+  from {
+    font-size: 1em;
+  }
+  to {
+    font-size: 2em;
+  }
+}
 /*Style de la page*/
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -75,6 +83,9 @@ nav ul li:hover {
   border-radius: 25px;
   box-shadow: 0px 6px 41px -5px rgba(0, 0, 0, 0.58);
 }
+.main .item:hover {
+  background-color: #c2c2c2;
+}
 .main .item h3 {
   font-weight: 700;
 }
@@ -84,6 +95,10 @@ nav ul li:hover {
 }
 .main .item i {
   color: #666666;
+}
+.main .item i:hover {
+  cursor: pointer;
+  animation: animScale, 1s;
 }
 footer {
   height: 5vh;
