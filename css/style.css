@@ -1,0 +1,17 @@
+/*Déclaration des constantes*/
+/*Style de la page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1c1c1c;
+  min-width: 100vw;
+  min-height: 100vh;
+  /*display: flex;*/
+  font-size: 1em;
+}
+nav {
+  display: flex;
+}
