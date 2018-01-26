@@ -90,11 +90,26 @@ nav{
 	
 	.item{
 		display: flex;
+		justify-content:space-around;
+		align-items:center;
 		height: 4vh;
 		width: 40vw;
 		background-color: darken(@couleurFond, 10%);
 		border-radius: 25px;
 		box-shadow: @box-shadow;
+		
+		h3{
+			font-weight: 700;
+		}
+
+		h4{
+			font-style: italic;
+			color: lighten(black, 40%)
+		}
+
+		i{
+			color: lighten(black, 40%)
+		}
 	}
 
 }//fin main
