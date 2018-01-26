@@ -4,6 +4,8 @@
 @couleurHeader: #424242;
 @couleurVert: #558B2F;
 
+@box-shadow:0px 6px 41px -5px rgba(0,0,0,0.58);
+
 
 /*Style de la page*/
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -60,7 +62,7 @@ header{
 nav{	
 	height: 5vh;
 	background-color: lighten(@couleurHeader, 10%);
-	box-shadow: 0px 6px 41px -5px rgba(0,0,0,0.58);
+	box-shadow: @box-shadow;
 
 	ul{
 		display: flex;
@@ -84,9 +86,18 @@ nav{
 	}
 } // fin nav
 
-main{
+.main{
+	
+	.item{
+		display: flex;
+		height: 4vh;
+		width: 40vw;
+		background-color: darken(@couleurFond, 10%);
+		border-radius: 25px;
+		box-shadow: @box-shadow;
+	}
 
-}
+}//fin main
 
 footer{
 	height: 5vh;
