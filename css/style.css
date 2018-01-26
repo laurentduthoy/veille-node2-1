@@ -97,11 +97,12 @@ nav ul li:hover {
 .main .item i {
   color: #666666;
   font-size: 1.5em;
-  cursor: auto;
+  transition: font-size 0.5s;
+  position: relative;
 }
-transition:all 5s .main .item i:hover {
+.main .item i:hover {
+  font-size: 1.7em;
   cursor: pointer;
-  font-size: 2em;
 }
 footer {
   height: 5vh;
