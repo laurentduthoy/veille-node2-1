@@ -77,6 +77,12 @@ nav ul li:hover {
   display: flex;
   justify-content: center;
 }
+.main h2 {
+  font-size: 2em;
+  padding-top: 1em;
+  color: #333333;
+  text-transform: uppercase;
+}
 .main .item {
   display: flex;
   justify-content: space-around;
