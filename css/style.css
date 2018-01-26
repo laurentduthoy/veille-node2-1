@@ -17,17 +17,20 @@ header {
   width: 100vw;
   background-color: #424242;
 }
+header h1 {
+  color: white;
+}
 nav {
   height: 5vh;
   background-color: #424242;
 }
 nav ul {
   display: flex;
-  height: 100%;
   align-content: center;
+  padding-left: 3em;
 }
 nav ul li {
-  width: 5em;
+  padding-top: 1em;
   color: white;
   text-decoration: none;
   list-style: none;
