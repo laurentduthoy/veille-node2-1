@@ -15,6 +15,7 @@ body {
   min-height: 100vh;
   /*display: flex;*/
   font-size: 1em;
+  font-family: "Roboto";
 }
 header {
   display: flex;
@@ -34,6 +35,7 @@ header .utilisateur {
   color: white;
   margin-right: 5em;
   align-items: center;
+  margin-bottom: 3em;
 }
 header .utilisateur h3 {
   padding-right: 1em;
@@ -52,7 +54,8 @@ nav {
 nav ul {
   display: flex;
   align-content: center;
-  padding-left: 3em;
+  padding-left: 5em;
+  height: 100%;
 }
 nav ul li {
   padding-top: 1em;
