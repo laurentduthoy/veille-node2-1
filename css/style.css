@@ -46,7 +46,7 @@ header .utilisateur .icon {
 }
 nav {
   height: 5vh;
-  background-color: #424242;
+  background-color: #5c5c5c;
 }
 nav ul {
   display: flex;
@@ -55,7 +55,7 @@ nav ul {
 }
 nav ul li {
   padding-top: 1em;
-  color: white;
+  color: #558b2f;
   text-decoration: none;
   list-style: none;
   margin-right: 3em;

@@ -2,6 +2,7 @@
 
 @couleurFond: #ffffff;
 @couleurHeader: #424242;
+@couleurVert: #558B2F;
 
 
 /*Style de la page*/
@@ -59,7 +60,7 @@ header{
 //style pour la navigation
 nav{	
 	height: 5vh;
-	background-color: @couleurHeader;
+	background-color: lighten(@couleurHeader, 10%);
 
 	ul{
 		display: flex;
@@ -68,7 +69,7 @@ nav{
 		
 		li{
 			padding-top: 1em;
-			color: white;
+			color: @couleurVert;
 			text-decoration: none;
 			list-style: none;
 			margin-right: 3em;
