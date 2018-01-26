@@ -112,6 +112,7 @@ nav ul li:hover {
 }
 .main h2 {
   font-size: 2em;
+  padding-left: 15em;
   padding-top: 1em;
   color: #333333;
   text-transform: uppercase;
