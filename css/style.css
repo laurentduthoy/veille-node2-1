@@ -6,11 +6,16 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #1c1c1c;
+  background-color: #000000;
   min-width: 100vw;
   min-height: 100vh;
   /*display: flex;*/
   font-size: 1em;
+}
+header {
+  height: 20vh;
+  width: 100vw;
+  background-color: #424242;
 }
 nav ul {
   display: flex;
