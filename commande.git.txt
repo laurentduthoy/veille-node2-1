@@ -1,0 +1,8 @@
+git remote add origin https://github.com/laurentduthoy/wp-theme.git
+git push -u origin master
+
+git add . // indexer l'ensemble des fichier modifiés
+git add <nom du fichier> // indexer l'ensemble des fichier modifiés
+
+git status
+git status -s
