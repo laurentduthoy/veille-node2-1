@@ -98,7 +98,8 @@ nav{
 } // fin nav
 
 .main{
-	
+	display: flex;
+	justify-content:center;
 	.item{
 		display: flex;
 		justify-content:space-around;
@@ -108,6 +109,9 @@ nav{
 		background-color: darken(@couleurFond, 10%);
 		border-radius: 25px;
 		box-shadow: @box-shadow;
+		margin-top: 5em;
+
+
 
 		&:hover{
 			background-color: lighten(@couleurHeader, 55%);
