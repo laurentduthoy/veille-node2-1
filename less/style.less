@@ -1,6 +1,6 @@
 /*Déclaration des constantes*/
 
-@couleurFond: #000000;
+@couleurFond: #ffffff;
 @couleurHeader: #424242;
 
 
@@ -21,18 +21,23 @@ body{
 
 //style du header
 header{
-	height: 20vh;
+	height: 15vh;
 	width: 100vw;
 	background-color: @couleurHeader;
 }
 
 //style pour la navigation
 nav{	
+	height: 5vh;
+	background-color: @couleurHeader;
 
 	ul{
 		display: flex;
+		height: 100%;
+		align-content:center;
 		
 		li{
+			width: 5em;
 			color: white;
 			text-decoration: none;
 			list-style: none;
@@ -41,6 +46,7 @@ nav{
 			&:hover{
 				color: red;
 				cursor: pointer;
+				background-color: blue;
 			}
 		}
 	}

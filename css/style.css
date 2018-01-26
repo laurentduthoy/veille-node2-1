@@ -6,21 +6,28 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #000000;
+  background-color: #ffffff;
   min-width: 100vw;
   min-height: 100vh;
   /*display: flex;*/
   font-size: 1em;
 }
 header {
-  height: 20vh;
+  height: 15vh;
   width: 100vw;
+  background-color: #424242;
+}
+nav {
+  height: 5vh;
   background-color: #424242;
 }
 nav ul {
   display: flex;
+  height: 100%;
+  align-content: center;
 }
 nav ul li {
+  width: 5em;
   color: white;
   text-decoration: none;
   list-style: none;
@@ -29,4 +36,5 @@ nav ul li {
 nav ul li:hover {
   color: red;
   cursor: pointer;
+  background-color: blue;
 }
