@@ -68,40 +68,7 @@ header{
 			font-size: 3em;
 			&:hover{
 				cursor: pointer;
-			}
-			&:active + .sousMenu{
-				display:block;
-			}
-		}
-
-		.sousMenu{
-			display: none;
-			position: absolute;
-			top:100px;
-			left: 1120px;
-			height: 8vh;
-			width: 12vw;
-			background-color: lighten(@couleurHeader, 30%);
-
-			ul{
-				display:flex;
-				flex-direction:column;
-				align-items:center;
-				li{
-					padding-bottom: 0.3em;
-					
-					&:first-child{
-						padding-top: 0.5em;
-					}
-
-					&:hover{
-						cursor: pointer;
-						background-color: lighten(@couleurHeader, 40%);
-					}
-					&:hover + .sousMenu{
-						display:block;
-					}
-				}
+				color: @couleurVert;
 			}
 		}
 	}

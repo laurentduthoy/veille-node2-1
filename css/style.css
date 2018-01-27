@@ -53,36 +53,7 @@ header .utilisateur i {
 }
 header .utilisateur i:hover {
   cursor: pointer;
-}
-header .utilisateur i:active + .sousMenu {
-  display: block;
-}
-header .utilisateur .sousMenu {
-  display: none;
-  position: absolute;
-  top: 100px;
-  left: 1120px;
-  height: 8vh;
-  width: 12vw;
-  background-color: #8f8f8f;
-}
-header .utilisateur .sousMenu ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-header .utilisateur .sousMenu ul li {
-  padding-bottom: 0.3em;
-}
-header .utilisateur .sousMenu ul li:first-child {
-  padding-top: 0.5em;
-}
-header .utilisateur .sousMenu ul li:hover {
-  cursor: pointer;
-  background-color: #a8a8a8;
-}
-header .utilisateur .sousMenu ul li:hover + .sousMenu {
-  display: block;
+  color: #558b2f;
 }
 nav {
   height: 5vh;
